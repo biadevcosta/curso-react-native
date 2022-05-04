@@ -1,5 +1,5 @@
 import React from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
-import {View} from 'react-native' // esta pegando um modulo
+import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
 
 //Como colocar um component 
 import ComponentUm /* maiuscula */ from './components/Primeiro' 
@@ -32,7 +32,7 @@ import Export,{ Saudacao, Sobremim } from './components/Olamundo'
 
     // usando outro component
     export default () => (
-        <View>
+        <SafeAreaView style= {style.App}> 
             <Padrao/>
             <ComponentUm/>  
             <Comp2/>
@@ -40,8 +40,18 @@ import Export,{ Saudacao, Sobremim } from './components/Olamundo'
             <Saudacao/>
             <Sobremim/>
             <Export/>
-        </View>
+        </SafeAreaView>
     )
+
+    const style = StyleSheet.create({ //está colocando o estilo dentro de uma constante
+        App:{
+            flexGrow: 1,//pode crescer
+            //O eixo principal é vertical, por ser a maior, por isso usamos
+            justifyContent: "center", //vertical
+            alignItems: "center", //eixo cruzado, horizontal
+
+        }        
+    })
   
 
     
