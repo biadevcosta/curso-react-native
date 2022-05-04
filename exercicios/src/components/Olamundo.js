@@ -6,4 +6,12 @@ function Saudacao(){
     return <Text>Olá mundo</Text>
 }
 
-export { Saudacao }
+function Sobremim(){
+    return <Text>Me chamo Ana</Text>
+}
+
+export default() => 
+    <Text>Export default</Text>
+
+    
+export { Saudacao, Sobremim }
