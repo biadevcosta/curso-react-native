@@ -34,7 +34,9 @@ import MinMax from './components/MinMax'
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-            <MinMax/>
+            <MinMax min="3" max="40"/>
+            <MinMax min="1" max="40"/>
+        
            {/* <Padrao/>
             <ComponentUm/>  
             <Comp2/>
