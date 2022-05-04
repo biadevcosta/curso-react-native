@@ -4,6 +4,7 @@ import {View} from 'react-native' // esta pegando um modulo
 //Como colocar um component 
 import ComponentUm /* maiuscula */ from './components/Primeiro' 
 import Padrao,{ Comp2, Comp3 } from './components/Multi'
+import { Saudacao } from './components/Olamundo'
 
 /*
 ===== 1 forma 
@@ -36,6 +37,7 @@ import Padrao,{ Comp2, Comp3 } from './components/Multi'
             <ComponentUm/>  
             <Comp2/>
             <Comp3/>
+            <Saudacao/>
         </View>
     )
   
