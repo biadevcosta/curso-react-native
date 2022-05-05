@@ -38,6 +38,11 @@ import Aleatorio from './components/aleatorio'
         <SafeAreaView style= {style.App}> 
 
         <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
 
 
         {/* <MinMax min={3} max={40}/>
