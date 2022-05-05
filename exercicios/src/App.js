@@ -2,10 +2,12 @@ import React from "react" //precisa usar quando vc for usar um jsx - javascript 
 import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
 
 //Como colocar um component 
-import ComponentUm /* maiuscula */ from './components/Primeiro' 
-import Padrao,{ Comp2, Comp3 } from './components/Multi'
-import Export,{ Saudacao, Sobremim } from './components/Olamundo'
-import MinMax from './components/MinMax'
+//import ComponentUm /* maiuscula */ from './components/Primeiro' 
+//import Padrao,{ Comp2, Comp3 } from './components/Multi'
+//import Export,{ Saudacao, Sobremim } from './components/Olamundo'
+//import MinMax from './components/MinMax'
+
+import Aleatorio from './components/aleatorio'
 
 /*
 ===== 1 forma 
@@ -34,16 +36,21 @@ import MinMax from './components/MinMax'
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-            <MinMax min="3" max="40"/>
-            <MinMax min="1" max="40"/>
-        
-           {/* <Padrao/>
-            <ComponentUm/>  
-            <Comp2/>
-            <Comp3/>
-            <Saudacao/>
-            <Sobremim/>
-    <Export/> */}
+
+        <Aleatorio min={10} max={60}/>
+
+
+        {/* <MinMax min={3} max={40}/>
+            <MinMax min={1} max={40}/>
+    
+        <Padrao/>
+        <ComponentUm/>  
+        <Comp2/>
+        <Comp3/>
+        <Saudacao/>
+        <Sobremim/>
+        <Export/> 
+    */}
         </SafeAreaView>
     )
 

@@ -2,11 +2,11 @@ import React from "react";
 import { Text } from 'react-native'
 import estilo from './estilo'
 
-export default (param) => {
-    console.warn(param)
+export default (props) => {
+    console.warn(props)
     return(
         <Text style= {estilo.txtM}>
-            O valor {param.max} é maior que o valor {param.min}
+            O valor {props.max} é maior que o valor {props.min}
          </Text>
     )
 }
