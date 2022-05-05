@@ -8,6 +8,7 @@ import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um m
 //import MinMax from './components/MinMax'
 
 import Aleatorio from './components/aleatorio'
+import Titulo from './components/Titulo'
 
 /*
 ===== 1 forma 
@@ -36,18 +37,17 @@ import Aleatorio from './components/aleatorio'
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-
-        <Aleatorio min={10} max={60}/>
-        <Aleatorio min={10} max={60}/>
-        <Aleatorio min={10} max={60}/>
-        <Aleatorio min={10} max={60}/>
-        <Aleatorio min={10} max={60}/>
-        <Aleatorio min={10} max={60}/>
+            <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
 
 
-        {/* <MinMax min={3} max={40}/>
-            <MinMax min={1} max={40}/>
-    
+        {/*<Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <Aleatorio min={10} max={60}/>
+        <MinMax min={3} max={40}/>
+        <MinMax min={1} max={40}/>
         <Padrao/>
         <ComponentUm/>  
         <Comp2/>
