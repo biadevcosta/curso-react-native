@@ -9,6 +9,7 @@ import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um m
 
 import Aleatorio from './components/aleatorio'
 import Titulo from './components/Titulo'
+import Botao from "./components/Botao"
 
 /*
 ===== 1 forma 
@@ -37,10 +38,13 @@ import Titulo from './components/Titulo'
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-            <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
+        <Botao/>
+            
 
 
-        {/*<Aleatorio min={10} max={60}/>
+        {/*
+        <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
+        <Aleatorio min={10} max={60}/>
         <Aleatorio min={10} max={60}/>
         <Aleatorio min={10} max={60}/>
         <Aleatorio min={10} max={60}/>
