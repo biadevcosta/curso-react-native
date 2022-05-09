@@ -1,4 +1,4 @@
-import React from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
+import React, {useState} from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
 import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
 
 //Como colocar um component 
@@ -6,10 +6,11 @@ import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um m
 //import Padrao,{ Comp2, Comp3 } from './components/Multi'
 //import Export,{ Saudacao, Sobremim } from './components/Olamundo'
 //import MinMax from './components/MinMax'
+//import Aleatorio from './components/aleatorio'
+//import Titulo from './components/Titulo'
+//import Botao from "./components/Botao"
 
-import Aleatorio from './components/aleatorio'
-import Titulo from './components/Titulo'
-import Botao from "./components/Botao"
+import Contador from "./components/Contador"
 
 /*
 ===== 1 forma 
@@ -38,11 +39,12 @@ import Botao from "./components/Botao"
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-        <Botao/>
-            
-
+            <Contador/>
+        </SafeAreaView>
+    )
 
         {/*
+        <Botao/>
         <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
         <Aleatorio min={10} max={60}/>
         <Aleatorio min={10} max={60}/>
@@ -60,8 +62,7 @@ import Botao from "./components/Botao"
         <Sobremim/>
         <Export/> 
     */}
-        </SafeAreaView>
-    )
+  
 
     const style = StyleSheet.create({ //está colocando o estilo dentro de uma constante
         App:{
