@@ -10,7 +10,8 @@ import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um m
 //import Titulo from './components/Titulo'
 //import Botao from "./components/Botao"
 
-import Contador from "./components/Contador"
+// import Contador from "./components/Contador"
+import Pai from "./components/indireta/pai"
 
 /*
 ===== 1 forma 
@@ -39,12 +40,13 @@ import Contador from "./components/Contador"
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
-            <Contador inicial={10} passo={10}/>
-            <Contador/>
+            <Pai/>
         </SafeAreaView>
     )
 
         {/*
+        <Contador inicial={10} passo={10}/>
+            <Contador/> 
         <Botao/>
         <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
         <Aleatorio min={10} max={60}/>
