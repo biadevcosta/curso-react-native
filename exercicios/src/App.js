@@ -1,4 +1,4 @@
-import React, {useState} from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
+import React from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
 import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
 
 //Como colocar um component 
@@ -39,6 +39,7 @@ import Contador from "./components/Contador"
     // usando outro component
     export default () => (
         <SafeAreaView style= {style.App}> 
+            <Contador inicial={10} passo={10}/>
             <Contador/>
         </SafeAreaView>
     )
