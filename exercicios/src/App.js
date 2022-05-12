@@ -1,6 +1,3 @@
-import React from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
-import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
-
 //Como colocar um component 
 //import ComponentUm /* maiuscula */ from './components/Primeiro' 
 //import Padrao,{ Comp2, Comp3 } from './components/Multi'
@@ -9,9 +6,8 @@ import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um m
 //import Aleatorio from './components/aleatorio'
 //import Titulo from './components/Titulo'
 //import Botao from "./components/Botao"
-
 // import Contador from "./components/Contador"
-import Pai from "./components/indireta/pai"
+//import Pai from "./components/indireta/pai"
 
 /*
 ===== 1 forma 
@@ -37,16 +33,33 @@ import Pai from "./components/indireta/pai"
 
     */ 
 
-    // usando outro component
+import React from "react" //precisa usar quando vc for usar um jsx - javascript que vira html
+import {View, StyleSheet, SafeAreaView} from 'react-native' // esta pegando um modulo
+import Diferenciar from './components/Diferenciar'
+
+
+   
     export default () => (
         <SafeAreaView style= {style.App}> 
-            <Pai/>
+           <Diferenciar/>
         </SafeAreaView>
     )
 
-        {/*
+        
+    const style = StyleSheet.create({ //está colocando o estilo dentro de uma constante
+        App:{
+            flexGrow: 1,//pode crescer
+            //O eixo principal é vertical, por ser a maior, por isso usamos
+            justifyContent: "center", //vertical
+            alignItems: "center", //eixo cruzado, horizontal
+            padding: 20,
+        }        
+    })
+  
+{/*
+        <Pai/>
         <Contador inicial={10} passo={10}/>
-            <Contador/> 
+        <Contador/> 
         <Botao/>
         <Titulo principal="Cadastro produto" secundario="Tela de cadastro"/>
         <Aleatorio min={10} max={60}/>
@@ -65,18 +78,5 @@ import Pai from "./components/indireta/pai"
         <Sobremim/>
         <Export/> 
     */}
-  
-
-    const style = StyleSheet.create({ //está colocando o estilo dentro de uma constante
-        App:{
-            flexGrow: 1,//pode crescer
-            //O eixo principal é vertical, por ser a maior, por isso usamos
-            justifyContent: "center", //vertical
-            alignItems: "center", //eixo cruzado, horizontal
-            padding: 20,
-        }        
-    })
-  
-
     
 
