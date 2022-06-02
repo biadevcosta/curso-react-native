@@ -14,8 +14,15 @@ let maisTransportes = transporte1.concat(transporte2, 'Van')
 )
 */
 
-const linguagens = ['HTML', 'CSS','js','php','python', 'js'];
+const linguagens = ['HTML', 'CSS','js','php','python', 'node'];
 
 linguagens.includes('CSS')//true
 linguagens.includes('ruby')//false
+console.log(linguagens.indexOf('node'))
+
+//[].join()
+
+
+
+
 

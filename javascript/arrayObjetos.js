@@ -47,6 +47,7 @@ frutas.sort() //deixa em ordem alfabetica
 
 const idades = [1,43,56,2,7,89,3,12]
 idades.sort() //ordem crescente de caracter em caracter 
+console.log(idades)
 
 //[]FILL()
 //[].fill(valor, inicio, final) preenche a array com o valor do inicio até o fim

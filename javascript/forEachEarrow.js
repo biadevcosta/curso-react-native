@@ -14,4 +14,13 @@ imgs.forEach((item,index,array) => {
 
 //código de uma linha
 let i = 0
-imgs.forEach(() => console.log(i++))*/
+imgs.forEach(() => console.log(i++))
+const numeros = [1,52,64,2,12]
+numeros.sort()
+console.log(numeros)*/
+
+//exemplo
+
+const li = document.querySelectorAll('li')
+
+li.forEach((item, index) => (item.classList.add('oNomequeEuQuiser' + index)))

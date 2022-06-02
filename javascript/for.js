@@ -15,5 +15,3 @@ for (variável que vai fazer o incremento(contadora);condição;incremento){
  for (let x = 0; x < array.length; x++){
      console.log(array[x])
  }
-
-  
