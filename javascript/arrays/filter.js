@@ -21,7 +21,6 @@ let arrayMap = array.map((item,index,array)=>{
 }).filter((item) => item > 13)
 
 
-
 /*let arrayFilter = arrayMap.filter((item, index, array)=>{
     return item > 15
 })*/
