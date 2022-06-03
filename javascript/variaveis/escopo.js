@@ -13,4 +13,11 @@ temos os escopos:
 
     console.log(myFunction())
 
+
+    function otherfunction(){
+        let otherVar = true //só está disponível dentro da função
+        return otherVar //só vai aparecer quando invocar a função
+    }
+
+    console.log(otherfunction())
     

@@ -1,6 +1,7 @@
 // ele substitui o if 
 // condição ? true : false
 // simplifica 
+//para instruções pequenas 
 
  console.log(1 == 2 ? true : false)
 
