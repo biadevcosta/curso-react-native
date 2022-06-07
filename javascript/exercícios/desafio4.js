@@ -4,7 +4,6 @@ equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
 
-
 let isTruthy = function(parametro){
     return !!parametro
 }
@@ -22,7 +21,7 @@ console.log(isTruthy(0))
 console.log(isTruthy(-0))
 
 
-/*
+/*n
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
 console.log(isTruthy(1))
@@ -124,15 +123,21 @@ citado acima, no lugar de "pessoas".
 
 carro.adicionarPessoas =  (numeroPessoas) => {
     let totalPessoas = carro.quantidadePessoas + numeroPessoas;
-    carro.quantidadePessoas = totalPessoas 
-        if(carro.quantidadePessoas >= carro.assentos){
-            return `O carro já está lotado`
-        }
+    if(carro.quantidadePessoas > carro.assentos && totalPessoas >= carro.assentos){
+        return `O carro já está lotado`
+    }
+    if(totalPessoas > carro.assentos){
+        let quantasPessoasCabem = carro.assentos - carro.quantidadePessoas
+        let pluralOusingular = quantasPessoasCabem === 1 ? 'pessoa' : 'pessoas'
+        return `Só cabe mais ${quantasPessoasCabem} ${pluralOusingular}!`
+    } 
+    carro.quantidadePessoas += numeroPessoas;
     return `já temos ${totalPessoas} pessoas no carro`
 };
 
 
-console.log(carro.quantidadePessoas)
+carro.quantidadePessoas = 0,
+console.log(carro)
 
 
 /*
