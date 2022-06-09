@@ -53,7 +53,7 @@ function imprimePares(){
 //com função
 function imprimeImpar(){
     for(contador = 0; contador <= 100; contador++){
-        if(contador % 2){
+        if(contador % 2 != 0){
             console.log(`${contador} é impar`)
         }
     }
@@ -145,7 +145,7 @@ function retornaPares(arr){
     }
 }
 
-retornaPares([1,2,3,4,5,6,8,10,12])
+//retornaPares([1,2,3,4,5,6,8,10,12])
 
 // usando filter
 
@@ -206,31 +206,28 @@ function pegaPrimosArray(arr){
     }
 }
 
-//pegaPrimosArray([1,2,3,4,5,6,6,7,,8,9,11])
+pegaPrimosArray([1,2,3,4,5,6,6,7,,8,9,11])
 
 //com filter 
 
-function filtraPrimos(arr){
-    for (a = 0; a <= arr.length; a++){
-        filtrada = arr.filter(pegaPrimosArray)
-}
-    return filtrada
+function imprimePrimosArray (arr){
+    const arrNova= arr.filter((x) =>{
+        if(pegaPrimosArray(x)) return x
+})
+    return arrNova
 }
 
-function pegaPrimosArray(arr){
-    let divisores = 0
-    for (b=1; b <= a; b++){
-        if (a % b === 0){
-        divisores++
-        }
+function pegaPrimosArray(numero){
+    for(let divisor= 2; divisor < numero; divisor++){
+        if (numero % divisor === 0)
+        return false
     }
-    if(divisores==2){
-        console.log(a)
-    };
-    return 
+        return true
 }
+    
 
-//filtraPrimos(([2,3,17]))
+console.log(imprimePrimosArray([1,2,3,4,5,6,7,8,9,11]))
+
 
 //Fazer uma funcao que receba um array e retorne um novo array e para cada posicao desse array que tiver um numero par retorne o numero com - par na frente e para cada posicao que tenha um impar retorne o numero com - impar na frente e quando for zero retorne a string zero ao invés do numero 0.
 
@@ -245,5 +242,6 @@ function retornaImparPar(arr){
         }
     })}
 
-retornaImparPar([1,2,3,4,5,6,7,8,9,10,0])
+    
+//retornaImparPar([1,2,3,4,5,6,7,8,9,10,0])
 
