@@ -138,14 +138,14 @@ function imprimevalores (a,b){
 //usando for
 
 function retornaPares(arr){
-    for(i = arr[0]; i <= arr.length; i++){
-        if(i % 2 == 0){
-            console.log(i)
+    for(i = 0; i <= arr.length; i++){
+        if(arr[i] % 2 == 0){
+            console.log(arr[i])
         }
     }
 }
 
-//retornaPares([1,2,3,4,5,6])
+retornaPares([1,2,3,4,5,6,8,10,12])
 
 // usando filter
 
